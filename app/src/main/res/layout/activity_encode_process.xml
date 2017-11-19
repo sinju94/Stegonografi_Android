@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".encode_process"
+    android:background="@drawable/background">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE IMAGE"
+        android:id="@+id/bChooseImage"
+        android:clickable="true"
+        android:elegantTextHeight="false"
+        android:enabled="true"
+        android:longClickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENCODE PROCESS"
+        android:id="@+id/bEncodeProcess"
+        android:clickable="true"
+        android:elegantTextHeight="false"
+        android:enabled="true"
+        android:longClickable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ivImageEncode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tv_char"
+        android:background="@android:drawable/alert_light_frame"
+        android:layout_below="@+id/bChooseImage" />
+
+    <TextView
+        android:text="160"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_char"
+        android:layout_above="@+id/etTextEncode"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:text="Input Your Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_info"
+        android:layout_below="@+id/ivImageEncode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTextEncode"
+        android:editable="true"
+        android:singleLine="false"
+        android:inputType="textMultiLine"
+        android:visibility="visible"
+        android:layout_alignWithParentIfMissing="false"
+        android:autoText="false"
+        android:textIsSelectable="false"
+        android:fontFamily="sans-serif"
+        android:elevation="0dp"
+        android:longClickable="true"
+        android:layout_above="@+id/bEncodeProcess"
+        android:layout_alignParentStart="true"
+        android:maxLength="160" />
+
+</RelativeLayout>

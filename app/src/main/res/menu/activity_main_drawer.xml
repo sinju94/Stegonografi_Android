@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bEncoding"
+            android:icon="@android:drawable/ic_secure"
+            android:title="Encoding" />
+        <item
+            android:id="@+id/bDecoding"
+            android:icon="@android:drawable/ic_partial_secure"
+            android:title="Decoding" />
+        <item
+            android:id="@+id/bStego_image"
+            android:icon="@android:drawable/sym_contact_card"
+            android:title="Open File Manager" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/bHelp"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>
